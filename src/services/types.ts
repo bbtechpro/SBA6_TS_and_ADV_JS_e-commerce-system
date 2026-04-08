@@ -1,6 +1,7 @@
 export interface DjProductAPI {
     id: number;
-    name: string;
+    title: string;
+    description: string;
     price: number;
     category: string;
     discountPercentage?: number;

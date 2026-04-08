@@ -2,7 +2,8 @@
  * Fetches product data from the API and returns an array of products.
  * Includes error handling for network issues and non-200 responses.
  */
-import type{ DjProductAPI } from './types.js'; 
+import {Product} from '../models/Product.js';
+import type {DjProductAPI} from './types.js'; 
 const API_URL = 'https://dummyjson.com/products';
 
 export const fetchProducts = async (): Promise<DjProductAPI[]> => {
