@@ -226,14 +226,15 @@ export const handleError = (error: unknown): void => {
 
 
 
-Ensure you have thoroughly read through the requirements for the project below before you begin planning it.
+✅ Ensure you have thoroughly read through the requirements for the project below before you begin planning it.
 
 Implementation
-Develop Product Class:
+✅ Develop Product Class:
 
 Product Base Class (Product.ts):
-Define a Product class that includes the appropriate properties based on data provided in the API response.
-Include methods displayDetails() and getPriceWithDiscount(), and implement them appropriately based on the provided data.
+✅ Define a Product class that includes the appropriate properties based on data provided in the API response.
+✅ Include methods displayDetails() and getPriceWithDiscount(), and implement them appropriately based on the provided data.
+
 Implement Utilities:
 
 Discount Calculator Module (discountCalculator.ts):
@@ -243,19 +244,25 @@ Tax Calculator Module (taxCalculator.ts):
 Create a calculateTax() function to handle tax calculations for products.
 This function should return the dollar amount that a product is taxed at. For example, if a product costs $100 and is taxed at 10%, the function should return $10.
 Note that the product data returned from the API does not include a taxPercentage field like it includes a discountPercentage field. Apply a default standard tax rate of 4.75% to each product; however, products with a category of “groceries” should only be taxed at 3%.
+✅ I combined both caulator functions into one module called calculator.ts to keep the code cleaner
+
 Handle Asynchronous Operations:
 
 API Service (apiService.ts):
-Create API requests using async/await and Promises.
-Implement functions to fetch product data and handle errors using try/catch.
+✅ Create API requests using async/await and Promises.
+✅ Implement functions to fetch product data and handle errors using try/catch.
+
 Error Handling Utility:
 
 Error Handler Module (errorHandler.ts):
-Implement a custom error class and functions to handle different types of errors gracefully.
+✅Implement a custom error class and functions to handle different types of errors gracefully.
+
 Create the Main Application:
 
 Main Entry File (index.ts):
-Import the product classes, tax calculator, and API service.
-Create instances of Product by fetching product data from the API.
-Use asynchronous functions to fetch product data and display it.
-Demonstrate error handling and OOP principles in action.
+✅ Import the product classes, calculators, and API service.
+✅ Create instances of Product by fetching product data from the API.
+✅ Use asynchronous functions to fetch product data and display it.
+✅ Demonstrate error handling and OOP principles in action.
+✅ Test all functionalities to ensure they work as expected.
+✅ Check for any TypeScript errors or runtime issues and resolve them.
